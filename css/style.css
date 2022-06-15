@@ -8,6 +8,7 @@
     margin: 0 auto;
     background-color: rgb(74, 188, 74);
     color: #fff;
+    border-radius: 0;
 }
 
 .row-content {
@@ -27,4 +28,22 @@ address {
     font-size: 80%;
     margin: 0 auto;
     color: #0f0f0f;
+}
+
+a {
+    color: green;
+}
+
+a:hover {
+    /* text-decoration: none; */
+    color: #fff;
+}
+
+body {
+    padding: 50px 0 0 0;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background-color: rgb(9, 163, 9);
 }
