@@ -39,8 +39,13 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center text-center text-sm-left">
                     <img src="img/logo.png" alt="logo" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm align-self-center text-center mt-2">
+                    <a role="button" href="#reservationTable" class="btn btn-danger px-5">
+                        <h4 class="h5">Reserve Table</h4>
+                    </a>
                 </div>
             </div>
         </div>
@@ -55,7 +60,7 @@
                 <div class="media">
                     <img src="img/uthappizza.png" alt="uthappizza" class="d-flex mr-3 align-self-center img-thumbnail">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <h2 class="mt-0">Uthappizza <small><span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></small></h2>
                         <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
@@ -69,11 +74,11 @@
             </div>
             <div class="col col-sm col-md">
                 <div class="media">
-                    <img src="img/buffet.png" alt="buffet" class="d-flex mr-3 align-self-center img-thumbnail">
-                    <div class="media-body">
-                        <h2>Weekend Grand Buffet</h2>
+                    <div class="media-body mr-2">
+                        <h2>Weekend Grand Buffet <small><span class="badge badge-danger">NEW</span></small></h2>
                         <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                     </div>
+                    <img src="img/buffet.png" alt="buffet" class="d-flex mr-3 align-self-center img-thumbnail">
                 </div>
             </div>
         </div>
@@ -84,11 +89,49 @@
             </div>
             <div class="col col-sm order-sm-first col-md">
                 <div class="media">
-                    <img src="img/alberto.png" alt="alberto" class="d-flex mr-3 align-self-center img-thumbnail">
+                    <img src="img/ken.jpg" alt="ken" width="130" class="d-flex mr-3 align-self-center img-thumbnail">
                     <div class="media-body">
-                        <h2>Alberto Somayya</h2>
-                        <h4>Executive Chef</h4>
-                        <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                        <h2>Kenneth Andales</h2>
+                        <h4>Software Developer</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sint similique doloremque officiis mollitia cumque veniam suscipit, nulla omnis, facilis perspiciatis eum nesciunt quaerat, amet iure dicta! Ex, esse distinctio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-2" id="reservationTable">
+            <div class="col-12 col-sm-8 offset-sm-2">
+                <div class="card">
+                    <h3 class="card-header bg-success text-white">Reaserve a Table</h3>
+                    <div class="card-body">
+                        <form action="" class="form">
+                            <div class="form-group row">
+                                <label for="ng1" class="col-form-label col-md-2">Number of Guests</label>
+                                <div class="col-md">
+                                    <div class="form-check">
+                                        <input class="" type="radio" name="number[]" id="ng1" value="1" /> <strong>1</strong>
+                                        <input class="" type="radio" name="number[]" id="ng2" value="2" /> <strong>2</strong>
+                                        <input class="" type="radio" name="number[]" id="ng3" value="3" /> <strong>3</strong>
+                                        <input class="" type="radio" name="number[]" id="ng4" value="4" /> <strong>4</strong>
+                                        <input class="" type="radio" name="number[]" id="ng5" value="5" /> <strong>5</strong>
+                                        <input class="" type="radio" name="number[]" id="ng6" value="6" /> <strong>6</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="date" class="col-form-label col-md-2">Date and Time</label>
+                                <div class="col-5 col-md-4">
+                                    <input required type="date" name="date" id="date" class="form-control">
+                                </div>
+                                <div class="col-5 col-md-4">
+                                    <input required type="time" name="time" id="time" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-4 offset-md-2">
+                                    <input type="submit" value="Reaserve" class="btn btn-success">
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

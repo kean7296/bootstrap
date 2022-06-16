@@ -30,11 +30,11 @@ address {
     color: #0f0f0f;
 }
 
-a {
+a:not(.nav-link) {
     color: green;
 }
 
-a:hover {
+a:not(.nav-link):hover {
     /* text-decoration: none; */
     color: #fff;
 }
@@ -46,4 +46,11 @@ body {
 
 .navbar-dark {
     background-color: rgb(9, 163, 9);
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
 }
