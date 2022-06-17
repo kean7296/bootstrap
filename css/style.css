@@ -30,7 +30,7 @@ address {
     color: #0f0f0f;
 }
 
-a:not(.nav-link) {
+a:not(.nav-link):not(.btn) {
     color: green;
 }
 
