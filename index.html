@@ -30,7 +30,7 @@
                     <li class="nav-item"><a class="nav-link" href="/contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a class="text-white btn" data-toggle="modal" data-target="#loginModal">
+                    <a class="text-white btn" id="loginBtn">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -141,7 +141,7 @@
                 <div class="col-12 col-sm align-self-center text-center mt-2">
                     <a role="button" 
                         href="#reservationModal" 
-                        data-toggle="modal"
+                        id="reservationBtn"
                         class="btn btn-danger btn-lg btn-block">
                         Reserve Table
                         <!-- <h4 class="h5 text-white">Reserve Table</h4> -->
@@ -294,6 +294,12 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(() => {   
+            $('#loginBtn').click(() => {
+                $('#loginModal').modal('toggle');
+            });
+            $('#reservationBtn').click(() => {
+                $('#reservationModal').modal('toggle');
+            });
             $('#myCarousel').carousel({ interval: 2000 });
 
             $('#carouselPlayPause').click(function() {
