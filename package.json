@@ -4,16 +4,20 @@
     "description": "This is a website for learning",
     "main": "index.html",
     "scripts": {
-        "start": "npm run lite",
+        "start": "npm run watch:all",
         "test": "echo \"Error: no test specified\" && exit 1",
         "lite": "lite-server",
         "less": "cd css && lessc style.less style.css",
-        "sass": "node-sass -o css/ css/"
+        "sass": "node-sass -o css/ css/",
+        "watch:sass": "onchange \"css/*.scss\" -- npm run sass",
+        "watch:all": "parallelshell \"npm run watch:sass\" \"npm run lite\""
     },
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "lite-server": "^2.3.0"
+        "lite-server": "^2.3.0",
+        "onchange": "^7.1.0",
+        "parallelshell": "^3.0.2"
     },
     "dependencies": {
         "bootstrap": "^4.0.0",
